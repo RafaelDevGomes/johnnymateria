@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_TVgawKeoEfGKXozPDx385g" name="projeto nexus">
+  <eAnnotations xmi:id="_TVgawaeoEfGKXozPDx385g" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_TVgawqeoEfGKXozPDx385g" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_TVgaw6eoEfGKXozPDx385g" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgaxKeoEfGKXozPDx385g" name="Tarefas">
+    <packagedElement xmi:type="uml:Package" xmi:id="_TVgaxaeoEfGKXozPDx385g" name="Backlog"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgaxqeoEfGKXozPDx385g" name="Ambiente"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgax6eoEfGKXozPDx385g" name="Deploys"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgayKeoEfGKXozPDx385g" name="Package2"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgayaeoEfGKXozPDx385g" name="Package3"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TVgayqeoEfGKXozPDx385g" name="Requesitos">
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVgay6eoEfGKXozPDx385g" name="Usuario">
+      <ownedAttribute xmi:id="_TVgazKeoEfGKXozPDx385g" name="Nome" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVgazaeoEfGKXozPDx385g" name="AreaEmpresa" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVgazqeoEfGKXozPDx385g" name="Requesito">
+      <ownedAttribute xmi:id="_TVgaz6eoEfGKXozPDx385g" name="tipoRequesito" visibility="public" type="_TVga36eoEfGKXozPDx385g" isUnique="false" association="_TVga16eoEfGKXozPDx385g">
+        <ownedComment xmi:id="_TVga0KeoEfGKXozPDx385g">
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga0aeoEfGKXozPDx385g" name="projeto" visibility="public" type="_TVga8qeoEfGKXozPDx385g" isUnique="false" association="_TVga26eoEfGKXozPDx385g"/>
+      <ownedAttribute xmi:id="_TVga0qeoEfGKXozPDx385g" name="codigo" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga06eoEfGKXozPDx385g" name="tipoRequesito" visibility="public" type="_TVga36eoEfGKXozPDx385g" isUnique="false"/>
+      <ownedAttribute xmi:id="_TVga1KeoEfGKXozPDx385g" name="descricao" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga1aeoEfGKXozPDx385g" name="status" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga1qeoEfGKXozPDx385g" name="projeto" visibility="public" type="_TVga8qeoEfGKXozPDx385g" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TVga16eoEfGKXozPDx385g" memberEnd="_TVgaz6eoEfGKXozPDx385g _TVga2KeoEfGKXozPDx385g">
+      <ownedEnd xmi:id="_TVga2KeoEfGKXozPDx385g" visibility="public" type="_TVgazqeoEfGKXozPDx385g" isUnique="false" association="_TVga16eoEfGKXozPDx385g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVga2aeoEfGKXozPDx385g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVga2qeoEfGKXozPDx385g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TVga26eoEfGKXozPDx385g" memberEnd="_TVga0aeoEfGKXozPDx385g _TVga3KeoEfGKXozPDx385g">
+      <ownedEnd xmi:id="_TVga3KeoEfGKXozPDx385g" visibility="public" type="_TVgazqeoEfGKXozPDx385g" isUnique="false" association="_TVga26eoEfGKXozPDx385g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVga3aeoEfGKXozPDx385g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVga3qeoEfGKXozPDx385g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga36eoEfGKXozPDx385g" name="TipoRequesito">
+      <ownedAttribute xmi:id="_TVga4KeoEfGKXozPDx385g" name="nome" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga4aeoEfGKXozPDx385g" name="prefixo" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga4qeoEfGKXozPDx385g" name="RegraNegocio">
+      <ownedAttribute xmi:id="_TVga46eoEfGKXozPDx385g" name="projeto" visibility="public" type="_TVga8qeoEfGKXozPDx385g" isUnique="false" association="_TVga56eoEfGKXozPDx385g"/>
+      <ownedAttribute xmi:id="_TVga5KeoEfGKXozPDx385g" name="descricao" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga5aeoEfGKXozPDx385g" name="codigo" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga5qeoEfGKXozPDx385g" name="projeto" visibility="public" type="_TVga8qeoEfGKXozPDx385g" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TVga56eoEfGKXozPDx385g" memberEnd="_TVga46eoEfGKXozPDx385g _TVga6KeoEfGKXozPDx385g">
+      <ownedEnd xmi:id="_TVga6KeoEfGKXozPDx385g" visibility="public" type="_TVga4qeoEfGKXozPDx385g" isUnique="false" association="_TVga56eoEfGKXozPDx385g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVga6aeoEfGKXozPDx385g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVga6qeoEfGKXozPDx385g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga66eoEfGKXozPDx385g" name="HistoriaUsuario"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga7KeoEfGKXozPDx385g" name="CasoDeUso"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga7aeoEfGKXozPDx385g" name="TesteAceitacao"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga7qeoEfGKXozPDx385g" name="ClienteEmpresa">
+      <ownedAttribute xmi:id="_TVga76eoEfGKXozPDx385g" name="cnpj" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga8KeoEfGKXozPDx385g" name="nome" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga8aeoEfGKXozPDx385g" name="endereco" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga8qeoEfGKXozPDx385g" name="Projeto">
+      <ownedAttribute xmi:id="_TVga86eoEfGKXozPDx385g" name="clienteEmpresa" visibility="public" type="_TVga7qeoEfGKXozPDx385g" isUnique="false" association="_TVga-qeoEfGKXozPDx385g"/>
+      <ownedAttribute xmi:id="_TVga9KeoEfGKXozPDx385g" name="Nome" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga9aeoEfGKXozPDx385g" name="descricao" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga9qeoEfGKXozPDx385g" name="dataInicio" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga96eoEfGKXozPDx385g" name="clienteEmpresa" visibility="public" type="_TVga7qeoEfGKXozPDx385g" isUnique="false"/>
+      <ownedAttribute xmi:id="_TVga-KeoEfGKXozPDx385g" name="nomeResponsavel" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVga-aeoEfGKXozPDx385g" name="emailResponsavel" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TVga-qeoEfGKXozPDx385g" memberEnd="_TVga86eoEfGKXozPDx385g _TVga-6eoEfGKXozPDx385g">
+      <ownedEnd xmi:id="_TVga-6eoEfGKXozPDx385g" visibility="public" type="_TVga8qeoEfGKXozPDx385g" isUnique="false" association="_TVga-qeoEfGKXozPDx385g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVga_KeoEfGKXozPDx385g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVga_aeoEfGKXozPDx385g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TVga_qeoEfGKXozPDx385g" name="AtividadeEmpresa">
+      <ownedAttribute xmi:id="_TVga_6eoEfGKXozPDx385g" name="clienteEmpresa" visibility="public" type="_TVga7qeoEfGKXozPDx385g" isUnique="false" association="_TVgbA6eoEfGKXozPDx385g"/>
+      <ownedAttribute xmi:id="_TVgbAKeoEfGKXozPDx385g" name="codigo" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVgbAaeoEfGKXozPDx385g" name="descricao" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TVgbAqeoEfGKXozPDx385g" name="clienteEmpresa" visibility="public" type="_TVga7qeoEfGKXozPDx385g" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TVgbA6eoEfGKXozPDx385g" memberEnd="_TVga_6eoEfGKXozPDx385g _TVgbBKeoEfGKXozPDx385g">
+      <ownedEnd xmi:id="_TVgbBKeoEfGKXozPDx385g" visibility="public" type="_TVga_qeoEfGKXozPDx385g" isUnique="false" association="_TVgbA6eoEfGKXozPDx385g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVgbBaeoEfGKXozPDx385g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVgbBqeoEfGKXozPDx385g"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
